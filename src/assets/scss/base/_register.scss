@@ -1,0 +1,153 @@
+.signup {
+    display: flex;
+    margin-top: 170px;
+    margin-bottom: 84px;
+}
+.signup-intro {
+    width: 50%;
+    h1 {
+        font-size: 70px;
+        font-weight: 600;
+        color: $white;
+        max-width: 500px;
+        line-height: 1.2;
+        span {
+            background: $default-gradient;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin: 0 10px;
+        }
+    }
+    p {
+        margin-top: 15px;
+        color: $white;
+        line-height: 1.5;
+    }
+}
+.signup-form {
+    background-color: $white;
+    border-radius: 15px;
+    padding: 40px;
+    width: 50%;
+    h2 {
+        font-size: 34px;
+        color: $black;
+    }
+}
+
+.form-control {
+    margin-top: 12px;
+    position: relative;
+    input {
+        padding: 12px 22px;
+        color: $white;
+        background-color: $black;
+        width: calc(100%);
+        border-radius: 30px;
+        border: none;
+        outline: none;
+        font-size: 12px;
+        &:focus {
+            background-color: #1c1c1c;
+        }
+        &::placeholder {
+            font-weight: 400;
+        }
+    }
+
+    p {
+        padding: 12px 22px;
+        color: $white;
+        background-color: $black;
+        width: calc(100%);
+        border-radius: 30px;
+        font-size: 12px;
+    }
+    .form-action {
+        position: absolute;
+        right: 0;
+        top: 0;
+        margin: 5px;
+        button {
+            border: 2px solid $white;
+            outline: none;
+            background-color: transparent;
+            color: $white;
+            border-radius: 30px;
+            width: 75px;
+            padding: 4px 0;
+            cursor: pointer;
+            transition: all 0.3s;
+            &:hover {
+                background-color: $white;
+                color: $black;
+            }
+            &:first-child {
+                margin-right: 5px;
+            }
+            &:last-child {
+                margin-left: 5px;
+            }
+            &.active {
+                background-color: $white;
+                color: $black;
+            }
+        }
+    }
+}
+.custom-datepicker {
+    padding: 12px 22px;
+    color: $white;
+    background-color: $black;
+    width: calc(100%);
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    font-size: 12px;
+    &:focus {
+        background-color: #1c1c1c;
+    }
+    &::placeholder {
+        font-weight: 400;
+    }
+}
+
+p.calandar-placeholder {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: $black;
+    color: $white;
+    font-size: 12px;
+    padding: 5px;
+    margin-top: 6px;
+    margin-left: 17px;
+}
+.open-calandar {
+    border: 2px solid $white;
+    outline: none;
+    background-color: transparent;
+    color: $white;
+    border-radius: 30px;
+    padding: 4px 0;
+    width: 160px !important;
+    margin: 0 !important;
+}
+
+@media (max-width: $lg) {
+    .signup {
+        flex-direction: column;
+        .signup-intro {
+            width: 100%;
+        }
+    }
+    .signup-form {
+        width: 100%;
+        margin-top: 40px;
+        padding: 20px;
+    }
+    .form-control .form-action button {
+        width: 45px;
+        font-size: 12px;
+    }
+}
