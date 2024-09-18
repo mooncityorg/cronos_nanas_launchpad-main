@@ -20,7 +20,7 @@ export default function Mint() {
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
                         <h4><span><CalendarIcon /></span>March 23rd</h4>
                         <h4><span><ClockIcon /></span>5pm UTC</h4>
-                        <h4><span><MoneyIcon /></span>150 Cro</h4>
+                        <h4><span><MoneyIcon /></span>1500 Cro</h4>
                         <div className="mint-actions">
                             <button className="button button-primary button-gradient">
                                 Connect Wallet
